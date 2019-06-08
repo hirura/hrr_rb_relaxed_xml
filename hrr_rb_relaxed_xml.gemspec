@@ -11,8 +11,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["hirura"]
   spec.email         = ["hirura@gmail.com"]
 
-  spec.summary       = %q{an REXML-based XML toolkit that can have multiple root elements}
-  spec.description   = %q{an REXML-based XML toolkit that can have multiple root elements}
+  spec.summary       = %q{An REXML-based XML toolkit that can have multiple root elements}
+  spec.description   = %q{An REXML-based XML toolkit that can have multiple root elements}
   spec.homepage      = "https://github.com/hirura/hrr_rb_relaxed_xml"
   spec.license       = "MIT"
 
