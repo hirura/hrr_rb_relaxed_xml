@@ -5,7 +5,7 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/4575e959b53a447b5fa6/test_coverage)](https://codeclimate.com/github/hirura/hrr_rb_relaxed_xml/test_coverage)
 [![Gem Version](https://badge.fury.io/rb/hrr_rb_relaxed_xml.svg)](https://badge.fury.io/rb/hrr_rb_relaxed_xml)
 
-hrr_rb_relaxed_xml is an XML toolkit based on REXML that can have multiple root elements.
+hrr_rb_relaxed_xml is an REXML-based XML toolkit that can have multiple root elements.
 
 
 ## Table of Contents
@@ -135,4 +135,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the HrrRbRelaxedXML project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/hirura/hrr_rb_relaxed_xml/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the hrr_rb_relaxed_xml project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/hirura/hrr_rb_relaxed_xml/blob/master/CODE_OF_CONDUCT.md).
