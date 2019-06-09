@@ -18,7 +18,8 @@ module HrrRbRelaxedXML
     alias :<< :add
 
     def add_element element, attrs={}
-      if element.nil?
+      case element
+      when nil
         super
       else
         child_e = @elements.add element
