@@ -22,9 +22,7 @@ module HrrRbRelaxedXML
         super
       else
         child_e = @elements.add element
-        attrs.each do |k, v|
-          child_e.attributes[k] = v
-        end
+        child_e.add_attributes attrs
         child_e
       end
     end
