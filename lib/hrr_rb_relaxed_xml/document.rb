@@ -5,6 +5,10 @@ require 'rexml/document'
 
 module HrrRbRelaxedXML
   class Document < REXML::Document
+    def clone
+      self.class.new self
+    end
+
     def add child
       case child
       when REXML::XMLDecl, REXML::DocType
