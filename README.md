@@ -86,10 +86,12 @@ The output of the `#write` method is the below.
 </root2>
 ```
 
-With using `#elements`, `#root`, `#add_element`, or `#add` methods, the XML document can be manipulated.
+With using `#elements`, `#clone`, `#deep_clone`, `#root`, `#add_element`, or `#add` methods, the XML document can be manipulated.
 
 ```ruby
 xml_doc.elements.to_a # => [<root1> ... </>, <root2> ... </>]
+
+xml_doc.deep_clone.elements.to_a # => [<root1> ... </>, <root2> ... </>]
 
 xml_doc.elements[1] # => <root1> ... </>
 xml_doc.elements['root1'].elements['child1'] # => <child1> ... </>
