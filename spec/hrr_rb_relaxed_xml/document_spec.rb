@@ -517,6 +517,58 @@ RSpec.describe HrrRbRelaxedXML::Document do
     end
   end
 
+  describe "when #clone method is called" do
+    let(:xml_doc){ described_class.new xml_str }
+    let(:xml_str){
+      <<-EOB
+        <root attr1="val1">
+          <dummy1 />
+        </root>
+        <root>
+          <dummy2 />
+        </root>
+        <root attr3="val3">
+          <dummy3 />
+        </root>
+      EOB
+    }
+
+    context "#clone" do
+      let(:xml_doc_clone){ xml_doc.clone }
+
+      it "returns HrrRbRelaxedXML::Document instance" do
+        expect( xml_doc_clone ).to be_instance_of described_class
+      end
+    end
+
+    context "#deep_clone" do
+      let(:xml_doc_deep_clone){ xml_doc.deep_clone }
+
+      it "returns HrrRbRelaxedXML::Document instance" do
+        expect( xml_doc_deep_clone ).to be_instance_of described_class
+      end
+
+      it "returns deeply cloned multiple elements " do
+        expect( xml_doc_deep_clone.elements.size ).to eq 3
+        expect( xml_doc_deep_clone.elements[1].name ).to eq 'root'
+        expect( xml_doc_deep_clone.elements[2].name ).to eq 'root'
+        expect( xml_doc_deep_clone.elements[3].name ).to eq 'root'
+        expect( xml_doc_deep_clone.elements[1].attributes.size ).to eq 1
+        expect( xml_doc_deep_clone.elements[2].attributes.size ).to eq 0
+        expect( xml_doc_deep_clone.elements[3].attributes.size ).to eq 1
+        expect( xml_doc_deep_clone.elements[1].attributes['attr1'] ).to eq 'val1'
+        expect( xml_doc_deep_clone.elements[2].attributes['attr2'] ).to be nil
+        expect( xml_doc_deep_clone.elements[3].attributes['attr3'] ).to eq 'val3'
+        expect( xml_doc_deep_clone.elements[1].elements.size ).to eq 1
+        expect( xml_doc_deep_clone.elements[2].elements.size ).to eq 1
+        expect( xml_doc_deep_clone.elements[3].elements.size ).to eq 1
+        expect( xml_doc_deep_clone.elements[1].elements[1].name ).to eq 'dummy1'
+        expect( xml_doc_deep_clone.elements[2].elements[1].name ).to eq 'dummy2'
+        expect( xml_doc_deep_clone.elements[3].elements[1].name ).to eq 'dummy3'
+      end
+    end
+  end
+
   describe "when #root method is called" do
     let(:xml_doc){ described_class.new xml_str }
     let(:xml_str){
