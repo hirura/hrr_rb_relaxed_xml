@@ -1,5 +1,3 @@
-# coding: utf-8
-
 RSpec.describe HrrRbRelaxedXML::XPath do
   let(:xml_doc){ HrrRbRelaxedXML::Document.new xml_str }
   let(:xml_str){

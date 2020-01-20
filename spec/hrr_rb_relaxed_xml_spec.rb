@@ -1,5 +1,3 @@
-# coding: utf-8
-
 RSpec.describe HrrRbRelaxedXML do
   it "has a version number" do
     expect(described_class::VERSION).not_to be nil

@@ -1,5 +1,3 @@
-# coding: utf-8
-
 RSpec.describe HrrRbRelaxedXML::Document do
   describe "when instantiated with no args" do
     let(:xml_doc){ described_class.new }
