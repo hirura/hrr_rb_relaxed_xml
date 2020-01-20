@@ -1,5 +1,4 @@
 # coding: utf-8
-# vim: et ts=2 sw=2
 
 RSpec.describe HrrRbRelaxedXML::XPath do
   let(:xml_doc){ HrrRbRelaxedXML::Document.new xml_str }

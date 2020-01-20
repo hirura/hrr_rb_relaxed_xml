@@ -1,5 +1,4 @@
 # coding: utf-8
-# vim: et ts=2 sw=2
 
 RSpec.describe HrrRbRelaxedXML::Document do
   describe "when instantiated with no args" do
