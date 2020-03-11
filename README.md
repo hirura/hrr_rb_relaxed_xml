@@ -1,6 +1,6 @@
 # HrrRbRelaxedXML
 
-[![Build Status](https://travis-ci.org/hirura/hrr_rb_relaxed_xml.svg?branch=master)](https://travis-ci.org/hirura/hrr_rb_relaxed_xml)
+[![Build Status](https://travis-ci.com/hirura/hrr_rb_relaxed_xml.svg?branch=master)](https://travis-ci.com/hirura/hrr_rb_relaxed_xml)
 [![Maintainability](https://api.codeclimate.com/v1/badges/4575e959b53a447b5fa6/maintainability)](https://codeclimate.com/github/hirura/hrr_rb_relaxed_xml/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/4575e959b53a447b5fa6/test_coverage)](https://codeclimate.com/github/hirura/hrr_rb_relaxed_xml/test_coverage)
 [![Gem Version](https://badge.fury.io/rb/hrr_rb_relaxed_xml.svg)](https://badge.fury.io/rb/hrr_rb_relaxed_xml)
